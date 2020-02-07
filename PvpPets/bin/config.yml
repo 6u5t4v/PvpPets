@@ -1,0 +1,595 @@
+#These are the settings for the pets.
+Pets:
+  #Settings you can change for the Horse Pet.
+  Horse:
+    #Settings for what egg/tier this pet goes into.
+    eggSettings:
+      #Can this pet be found in a pet egg?
+      inEgg: true
+      #If 'inEgg: true', what tier shall this pet be in?
+      #Tiers: 1 = Exclusive, 2 = Ultimate, 3 = Legendary, 4 = Ancient
+      #A SERVER RESTART (NOT /NRELOAD) IS REQUIRED TO CHANGE THIS!!
+      tier: 1
+    #Settings for the pet item.
+    item:
+      #Do not include the LVL here. Only the name!
+      displayname: '&6&lHorse Pet'
+      #What skin should the pet item have?
+      material: 'hdb-635'
+      #What lore should the pet have. CAN ONLY HAVE 7 LINES: NOTHING LESS, NOTHING MORE!!!
+      lore:
+        - '&7Gallop away like a horse into safety'
+        - '&7when you are in extreme danger.'
+        - '&r'
+        - '&b&lPASSIVE'
+        - '&7* Put this pet in your inventory to'
+        - '&7   gain a speed boost.'
+        - '&r'
+    #Available ability type are "PASSIVE, DODGE, STEALFOOD, CLOSEDEATH, CLOSEDEATH2, RESTOCK, IRONSKIN"
+    ability: PASSIVE
+    potioneffect: SPEED
+    
+  #Settings you can change for the Rabbit Pet.
+  Rabbit:
+    #Settings for what egg/tier this pet goes into.
+    eggSettings:
+      #Can this pet be found in a pet egg?
+      inEgg: true
+      #If 'inEgg: true', what tier shall this pet be in?
+      #Tiers: 1 = Exclusive, 2 = Ultimate, 3 = Legendary, 4 = Ancient
+      #A SERVER RESTART (NOT /NRELOAD) IS REQUIRED TO CHANGE THIS!!
+      tier: 1
+    #Settings for the pet item.
+    item:
+      #Do not include the LVL here. Only the name!
+      displayname: '&6&lRabbit Pet'
+      #What skin should the pet item have?
+      material: 'hdb-7393'
+      #What lore should the pet have. CAN ONLY HAVE 7 LINES: NOTHING LESS, NOTHING MORE!!!
+      lore:
+        - '&7Hop away like a rabbit from danger'
+        - '&7by climbing high structures.'
+        - '&r'
+        - '&b&lPASSIVE'
+        - '&7* Put this pet in your inventory to'
+        - '&7   gain a jump boost.'
+        - '&r'
+    #Available ability type are "PASSIVE, DODGE, STEALFOOD, CLOSEDEATH, CLOSEDEATH2, RESTOCK, IRONSKIN"
+    ability: PASSIVE
+    potioneffect: JUMP
+  #Settings you can change for the Miner Pet.
+  Miner:
+    #Settings for what egg/tier this pet goes into.
+    eggSettings:
+      #Can this pet be found in a pet egg?
+      inEgg: true
+      #If 'inEgg: true', what tier shall this pet be in?
+      #Tiers: 1 = Exclusive, 2 = Ultimate, 3 = Legendary, 4 = Ancient
+      #A SERVER RESTART (NOT /NRELOAD) IS REQUIRED TO CHANGE THIS!!
+      tier: 1
+    #Settings for the pet item.
+    item:
+      #Do not include the LVL here. Only the name!
+      displayname: '&6&lMiner Pet'
+      #What skin should the pet item have?
+      material: 'hdb-2583'
+      #What lore should the pet have. CAN ONLY HAVE 7 LINES: NOTHING LESS, NOTHING MORE!!!
+      lore:
+        - '&7You have a chance to be in a miner''s'
+        - '&7shoes and get the ability to mine faster.'
+        - '&r'
+        - '&b&lPASSIVE'
+        - '&7* Put this pet in your inventory to'
+        - '&7   gain the haste effect.'
+        - '&r'
+    #Available ability type are "PASSIVE, DODGE, STEALFOOD, CLOSEDEATH, CLOSEDEATH2, RESTOCK, IRONSKIN"
+    ability: PASSIVE
+    potioneffect: FAST_DIGGING
+  #Settings you can change for the Pig Pet.
+  Pig:
+    #Settings for what egg/tier this pet goes into.
+    eggSettings:
+      #Can this pet be found in a pet egg?
+      inEgg: true
+      #If 'inEgg: true', what tier shall this pet be in?
+      #Tiers: 1 = Exclusive, 2 = Ultimate, 3 = Legendary, 4 = Ancient
+      #A SERVER RESTART (NOT /NRELOAD) IS REQUIRED TO CHANGE THIS!!
+      tier: 1
+    #Settings for the pet item.
+    item:
+      #Do not include the LVL here. Only the name!
+      displayname: '&6&lPig Pet'
+      #What skin should the pet item have?
+      material: 'hdb-337'
+      #What lore should the pet have. CAN ONLY HAVE 7 LINES: NOTHING LESS, NOTHING MORE!!!
+      lore:
+        - '&7Be like a statisfied pig by'
+        - '&7maintaining your saturation.'
+        - '&r'
+        - '&b&lPASSIVE'
+        - '&7* Put this pet in your inventory to'
+        - '&7   gain the saturation effect.'
+        - '&r'
+    #Available ability type are "PASSIVE, DODGE, STEALFOOD, CLOSEDEATH, CLOSEDEATH2, RESTOCK, IRONSKIN"
+    ability: PASSIVE
+    potioneffect: SATURATION
+  #Settings you can change for the Enderman Pet.
+  Enderman:
+    #Settings for what egg/tier this pet goes into.
+    eggSettings:
+      #Can this pet be found in a pet egg?
+      inEgg: true
+      #If 'inEgg: true', what tier shall this pet be in?
+      #Tiers: 1 = Exclusive, 2 = Ultimate, 3 = Legendary, 4 = Ancient
+      #A SERVER RESTART (NOT /NRELOAD) IS REQUIRED TO CHANGE THIS!!
+      tier: 2
+    #Settings for the pet item.
+    item:
+      #Do not include the LVL here. Only the name!
+      displayname: '&6&lEnderman Pet'
+      #What skin should the pet item have?
+      material: 'hdb-318'
+      #What lore should the pet have. CAN ONLY HAVE 7 LINES: NOTHING LESS, NOTHING MORE!!!
+      lore:
+        - '&7Evade damage by teleporting away like'
+        - '&7an enderman when you are in a fight.'
+        - '&r'
+        - '&c&lDEFENSIVE'
+        - '&7* Put this pet in your inventory to'
+        - '&7   have a chance to dodge attacks.'
+        - '&r'
+      #What should the dodge message be?
+      message: '&e&l*** ATTACK DODGED *** &7[ENDERMAN PET]'
+    #Available ability type are "PASSIVE, DODGE, STEALFOOD, CLOSEDEATH, CLOSEDEATH2, RESTOCK, IRONSKIN"
+    ability: DODGE
+  #Settings you can change for the Magma Pet.
+  Magma:
+    #Settings for what egg/tier this pet goes into.
+    eggSettings:
+      #Can this pet be found in a pet egg?
+      inEgg: true
+      #If 'inEgg: true', what tier shall this pet be in?
+      #Tiers: 1 = Exclusive, 2 = Ultimate, 3 = Legendary, 4 = Ancient
+      #A SERVER RESTART (NOT /NRELOAD) IS REQUIRED TO CHANGE THIS!!
+      tier: 2
+    #Settings for the pet item.
+    item:
+      #Do not include the LVL here. Only the name!
+      displayname: '&6&lMagma Pet'
+      #What skin should the pet item have?
+      material: 'hdb-323'
+      #What lore should the pet have. CAN ONLY HAVE 7 LINES: NOTHING LESS, NOTHING MORE!!!
+      lore:
+        - '&7Get the immunity to catching on fire like'
+        - '&7a lava slime and venture in the nether.'
+        - '&r'
+        - '&b&lPASSIVE'
+        - '&7* Put this pet in your inventory to'
+        - '&7   gain fire resistance.'
+        - '&r'
+    #Available ability type are "PASSIVE, DODGE, STEALFOOD, CLOSEDEATH, CLOSEDEATH2, RESTOCK, IRONSKIN"
+    ability: PASSIVE
+    potioneffect: FIRE_RESISTANCE
+  #Settings you can change for the Zombie Pet.
+  Zombie:
+    #Settings for what egg/tier this pet goes into.
+    eggSettings:
+      #Can this pet be found in a pet egg?
+      inEgg: true
+      #If 'inEgg: true', what tier shall this pet be in?
+      #Tiers: 1 = Exclusive, 2 = Ultimate, 3 = Legendary, 4 = Ancient
+      #A SERVER RESTART (NOT /NRELOAD) IS REQUIRED TO CHANGE THIS!!
+      tier: 2
+    #Settings for the pet item.
+    item:
+      #Do not include the LVL here. Only the name!
+      displayname: '&6&lZombie Pet'
+      #What skin should the pet item have?
+      material: 'hdb-4187'
+      #What lore should the pet have. CAN ONLY HAVE 7 LINES: NOTHING LESS, NOTHING MORE!!!
+      lore:
+        - '&7Satisfy your appetite like the undead by'
+        - '&7stealing your opponent''s food.'
+        - '&r'
+        - '&c&lAGGRESSIVE'
+        - '&7* Put this pet in your inventory for a chance'
+        - '&7  to get saturation and your enemy hunger.'
+        - '&r'
+      #What message should the player get when this pet activates?
+      message: '&a&l*** ENEMY STARVED *** &7[ZOMBIE PET]'
+    #Available ability type are "PASSIVE, DODGE, STEALFOOD, CLOSEDEATH, CLOSEDEATH2, RESTOCK, IRONSKIN"
+    ability: STEALFOOD
+  #Settings you can change for the Golden Cow Pet.
+  GoldenCow:
+    #Settings for what egg/tier this pet goes into.
+    eggSettings:
+      #Can this pet be found in a pet egg?
+      inEgg: true
+      #If 'inEgg: true', what tier shall this pet be in?
+      #Tiers: 1 = Exclusive, 2 = Ultimate, 3 = Legendary, 4 = Ancient
+      #A SERVER RESTART (NOT /NRELOAD) IS REQUIRED TO CHANGE THIS!!
+      tier: 3
+    #Settings for the pet item.
+    item:
+      #Do not include the LVL here. Only the name!
+      displayname: '&6&lGolden Cow Pet'
+      #What skin should the pet item have?
+      material: 'hdb-825'
+      #What lore should the pet have. CAN ONLY HAVE 7 LINES: NOTHING LESS, NOTHING MORE!!!
+      lore:
+        - '&7Get the special magical powers from the'
+        - '&7golden cow where you can get healed.'
+        - '&r'
+        - '&e&lDEFENSIVE'
+        - '&7* Put this pet in your inventory to'
+        - '&7   have a chance to heal at low health.'
+        - '&r'
+      #What message should the player get when they get healed by the pet?
+      message: '&6&l*** HEALED *** &7[GOLDEN COW PET]'
+    #Available ability type are "PASSIVE, DODGE, STEALFOOD, CLOSEDEATH, CLOSEDEATH2, RESTOCK, IRONSKIN"
+    ability: CLOSEDEATH
+  #Settings you can change for the Phoenix Pet.
+  Phoenix:
+    #Settings for what egg/tier this pet goes into.
+    eggSettings:
+      #Can this pet be found in a pet egg?
+      inEgg: true
+      #If 'inEgg: true', what tier shall this pet be in?
+      #Tiers: 1 = Exclusive, 2 = Ultimate, 3 = Legendary, 4 = Ancient
+      #A SERVER RESTART (NOT /NRELOAD) IS REQUIRED TO CHANGE THIS!!
+      tier: 3
+    #Settings for the pet item.
+    item:
+      #Do not include the LVL here. Only the name!
+      displayname: '&6&lPhoenix Pet'
+      #What skin should the pet item have?
+      material: 'hdb-683'
+      #What lore should the pet have. CAN ONLY HAVE 7 LINES: NOTHING LESS, NOTHING MORE!!!
+      lore:
+        - '&7Obtain the powers from the Phoenix and'
+        - '&7live another life once you crumble.'
+        - '&r'
+        - '&e&lDEFENSIVE'
+        - '&7* Put this pet in your inventory for'
+        - '&7  a chance to get healed when you are'
+        - '&7  on low health and blind your enemies.'
+      #What message should the player get when they get healed and blind their enemies.
+      message: '&b&l*** PHOENIX EFFECTS *** &7[PHOENIX PET]'
+    #Available ability type are "PASSIVE, DODGE, STEALFOOD, CLOSEDEATH, CLOSEDEATH2, RESTOCK, IRONSKIN"
+    ability: CLOSEDEATH2
+  #Settings you can change for the Iron Golem Pet.
+  IronGolem:
+    #Settings for what egg/tier this pet goes into.
+    eggSettings:
+      #Can this pet be found in a pet egg?
+      inEgg: true
+      #If 'inEgg: true', what tier shall this pet be in?
+      #Tiers: 1 = Exclusive, 2 = Ultimate, 3 = Legendary, 4 = Ancient
+      #A SERVER RESTART (NOT /NRELOAD) IS REQUIRED TO CHANGE THIS!!
+      tier: 3
+    #Settings for the pet item.
+    item:
+      #Do not include the LVL here. Only the name!
+      displayname: '&6&lIron Golem Pet'
+      #What skin should the pet item have?
+      material: 'hdb-341'
+      #What lore should the pet have. CAN ONLY HAVE 7 LINES: NOTHING LESS, NOTHING MORE!!!
+      lore:
+        - '&7Use a shield that is strong as iron'
+        - '&7to protect yourself during combat.'
+        - '&r'
+        - '&e&lDEFENSIVE'
+        - '&7* Right-click to gain the absorption'
+        - '&7  potion effect.'
+        - '&r'
+    #What should the activate message be?
+    message: '&6(!) Your &7&nIron Golem Pet&r &6has been activated.'
+    #Available ability type are "PASSIVE, DODGE, STEALFOOD, CLOSEDEATH, CLOSEDEATH2, RESTOCK, IRONSKIN"
+    ability: IRONSKIN
+  #Settings you can change for the Raider Pet.
+  Raider:
+    #Settings for what egg/tier this pet goes into.
+    eggSettings:
+      #Can this pet be found in a pet egg?
+      inEgg: true
+      #If 'inEgg: true', what tier shall this pet be in?
+      #Tiers: 1 = Exclusive, 2 = Ultimate, 3 = Legendary, 4 = Ancient
+      #A SERVER RESTART (NOT /NRELOAD) IS REQUIRED TO CHANGE THIS!!
+      tier: 4
+    #Settings for the pet item.
+    item:
+      #Do not include the LVL here. Only the name!
+      displayname: '&6&lRaider Pet'
+      #What skin should the pet item have?
+      material: 'hdb-34425'
+      #What lore should the pet have. CAN ONLY HAVE 7 LINES: NOTHING LESS, NOTHING MORE!!!
+      lore:
+        - '&7Stock up on your raiding supplies'
+        - '&7with this mysterious pet.'
+        - '&r'
+        - '&a&lRESTOCKER'
+        - '&7* Right-click to obtain items that'
+        - '&7  can be used for raiding.'
+        - '&r'
+    #What should the activate message be?
+    message: |-
+      &6(!) Your &7&nRaider Pet&r &6has been activated.
+      &7You have received &nsome&r &7raiding supplies.
+    #Available ability type are "PASSIVE, DODGE, STEALFOOD, CLOSEDEATH, CLOSEDEATH2, RESTOCK, IRONSKIN"
+    ability: RESTOCK
+    #A random item from the list is selected and given to the player 
+    itemslist:
+    - "TNT;2"
+    - "DISPENSER;1"
+    - "COBWEB;2"
+    - "REDSTONE;4"
+    - "DROPPER;1"
+    - "REPEATER;1"
+    - "COMPARATOR;1"
+    - "OAK_BUTTON;3"
+    - "STONE_BUTTON;3"
+    
+  #Settings you can change for the Alchemist Pet.
+  Alchemist:
+    #Settings for what egg/tier this pet goes into.
+    eggSettings:
+      #Can this pet be found in a pet egg?
+      inEgg: true
+      #If 'inEgg: true', what tier shall this pet be in?
+      #Tiers: 1 = Exclusive, 2 = Ultimate, 3 = Legendary, 4 = Ancient
+      #A SERVER RESTART (NOT /NRELOAD) IS REQUIRED TO CHANGE THIS!!
+      tier: 4
+    #Settings for the pet item.
+    item:
+      #Do not include the LVL here. Only the name!
+      displayname: '&6&lAlchemist Pet'
+      #What skin should the pet item have?
+      material: 'hdb-3864'
+      #What lore should the pet have. CAN ONLY HAVE 7 LINES: NOTHING LESS, NOTHING MORE!!!
+      lore:
+        - '&7This pet will brew potions for you'
+        - '&7to you during a battle.'
+        - '&r'
+        - '&a&lRESTOCKER'
+        - '&7* Right-click to obtain potions that'
+        - '&7  can be used when you are fighting.'
+        - '&r'
+    #What should the activate message be?
+    message: |-
+      &6(!) Your &7&nAlchemist Pet&r &6has been activated.
+      &7You have received a potion and/or potion ingredients.
+    #Available ability type are "PASSIVE, DODGE, STEALFOOD, CLOSEDEATH, CLOSEDEATH2, RESTOCK, IRONSKIN"
+    ability: RESTOCK
+    #A random item from the list is selected and given to the player 
+    itemslist:
+    - "potion(REGEN,1,false);1"
+    - "potion(INSTANT_HEAL,2,false);1"
+    - "potion(STRENGTH,1,false);1"
+    - "potion(SPEED,1,false);1"
+    - "potion(WATER_BREATHING, 1,false);1"
+    - "potion(REGEN,2,false);1"
+    - "potion(SPEED,1,false);1"
+    - "potion(INSTANT_HEAL,1,false);1"
+    - "potion(STRENGTH,2,false);1"
+    - "potion(INSTANT_HEAL,1,false);1"
+    - "potion(SPEED,2,false);1"
+    - "REDSTONE;3"
+    - "GLOWSTONE_DUST;3"
+    - "GUNPOWDER;2"
+    - "NETHER_WART;1"
+#These are the settings for the pet shop.
+PetShop:
+  #The name of the inventory for the pet shop.
+  inventoryName: '&8Purchase an egg...'
+  
+  #spacer
+  Spacer:
+    displayname: " "
+    material: "GRAY_STAINED_GLASS_PANE"
+  
+  #Settings for the exclusive pet egg in the pet shop.
+  Exclusive:
+    #Can the exclusive pet egg be purchased?
+    purchasable: true
+    #If "true" then the cost is vault otherwise its experience LEVELS
+    useVault: false
+    #Cost of the exclusive pet egg.
+    cost: 100
+    #Settings for the item in the shop.
+    guiitem:
+      #The name of the item in the inventory.
+      displayname: '&a&lMystery Pet Egg'
+      #The lore of the item in the inventory.
+      material: 'hdb-961' 
+      lore:
+        - '&7You will receive a random &aexclusive &7pet when'
+        - '&7you purchase and &nright-click&r &7this egg.'
+        - '&r'
+        - '&7Possible pet inside this egg...'
+        - '&a * Horse'
+        - '&a * Rabbit'
+        - '&a * Miner'
+        - '&a * Pig'
+        - '&r'
+        - '&f&lCOST &a100 &lLEVELS'
+    #Settings for the pet egg.
+    item:
+      #The name of the egg.
+      displayname: '&a&lMystery Pet Egg &7(Right Click)'
+      material: 'hdb-961'
+      #The lore of the egg.
+      lore:
+        - '&7You will receive a random &aexclusive &7pet when'
+        - '&7you &nright-click&r &7this egg.'
+        - '&r'
+        - '&7Possible pet inside this egg...'
+        - '&a * Horse'
+        - '&a * Rabbit'
+        - '&a * Miner'
+        - '&a * Pig'
+  #Settings for the ultimate pet egg in the pet shop.
+  Ultimate:
+    #Can the ultimate pet egg be purchased?
+    purchasable: true
+    #If "true" then the cost is vault otherwise its experience LEVELS
+    useVault: false
+    #Cost of the ultimate pet egg. This is in experience LEVELS.
+    cost: 150
+    #Settings for the item in the shop.
+    guiitem:
+      #The name of the item in the inventory.
+      displayname: '&e&lMystery Pet Egg'
+      material: 'hdb-963'
+      #The lore of the item in the inventory.
+      lore:
+        - '&7You will receive a random &eultimate &7pet when'
+        - '&7you purchase and &nright-click&r &7this egg.'
+        - '&r'
+        - '&7Possible pet inside this egg...'
+        - '&e * Enderman'
+        - '&e * Magma'
+        - '&e * Zombie'
+        - '&r'
+        - '&f&lCOST &a150 &lLEVELS'
+    #Settings for the pet egg.
+    item:
+      #The name of the egg.
+      displayname: '&e&lMystery Pet Egg &7(Right Click)'
+      material: 'hdb-963'
+      #The lore of the egg.
+      lore:
+        - '&7You will receive a random &eultimate &7pet when'
+        - '&7you &nright-click&r &7this egg.'
+        - '&r'
+        - '&7Possible pet inside this egg...'
+        - '&e * Enderman'
+        - '&e * Magma'
+        - '&e * Zombie'
+  #Settings for the legendary pet egg in the pet shop.
+  Legendary:
+    #Can the legendary pet egg be purchased?
+    purchasable: true
+    #If "true" then the cost is vault otherwise its experience LEVELS
+    useVault: false
+    #Cost of the legendary pet egg. This is in experience LEVELS.
+    cost: 200
+    #Settings for the item in the shop.
+    guiitem:
+      #The name of the item in the inventory.
+      displayname: '&6&lMystery Pet Egg'
+      material: 'hdb-958'
+      #The lore of the item in the inventory.
+      lore:
+        - '&7You will receive a random &6legendary &7pet when'
+        - '&7you purchase and &nright-click&r &7this egg.'
+        - '&r'
+        - '&7Possible pet inside this egg...'
+        - '&6 * Golden Cow'
+        - '&6 * Phoenix'
+        - '&6 * Iron Golem'
+        - '&r'
+        - '&f&lCOST &a200 &lLEVELS'
+    #Settings for the pet egg.
+    item:
+      #The name of the egg.
+      displayname: '&6&lMystery Pet Egg &7(Right Click)'
+      material: 'hdb-958'
+      #The lore of the egg.
+      lore:
+        - '&7You will receive a random &6legendary &7pet when'
+        - '&7you &nright-click&r &7this egg.'
+        - '&r'
+        - '&7Possible pet inside this egg...'
+        - '&6 * Golden Cow'
+        - '&6 * Phoenix'
+        - '&6 * Iron Golem'
+  #Settings for the ancient pet egg in the pet shop.
+  Ancient:
+    #Can the ancient pet egg be purchased?
+    purchasable: false
+    #If "true" then the cost is vault otherwise its experience LEVELS
+    useVault: false
+    #Cost of the ancient pet egg. This is in experience LEVELS.
+    cost: 250
+    #Settings for the item in the shop.
+    guiitem:
+      #The name of the item in the inventory.
+      displayname: '&c&lMystery Pet Egg'
+      material: 'hdb-937'
+      #The lore of the item in the inventory.
+      lore:
+        - '&7You will receive a random &cancient &7pet when'
+        - '&7you purchase and &nright-click&r &7this egg.'
+        - '&r'
+        - '&7Possible pet inside this egg...'
+        - '&c * Raider'
+        - '&c * Alchemist'
+        - '&r'
+        - '&cThis egg &ncannot&r &cbe purchased.'
+        - '&7You can only find it in the warzone or in the store.'
+    #Settings for the pet egg.
+    item:
+      #The name of the egg.
+      displayname: '&c&lMystery Pet Egg &7(Right Click)'
+      material: 'hdb-937'
+      #The lore of the egg.
+      lore:
+        - '&7You will receive a random &cancient &7pet when'
+        - '&7you &nright-click&r &7this egg.'
+        - '&r'
+        - '&7Possible pet inside this egg...'
+        - '&c * Raider'
+        - '&c * Alchemist'
+#This is where you can change the messages.
+Messages:
+  PREFIX: '&c&lPvpPets &8// '
+  #The message sent to the sender if the egg dosent exist
+  INVALID_EGG: '&c(!) No egg with name &7&n%mysteryegg%&c.'
+  #The message sent to the sender if the pet dosent exist
+  INVALID_PET: '&c(!) No pet with name &7&n%pet%&c.'
+  #The message the player will receive when they purchase the ancient egg.
+  PURCHASE: '&a(!) You have successfully purchased an &7&n%mysteryegg% Mystery Egg&r &afor &7&n%cost%&r &aexperience.'
+  #The message the player will receive when they do not have enough experience.
+  CANNOT_AFFORD: '&c(!) You do not have enough experience to purchase this item.'
+  #The message that is sent if the egg cannot be purchased when a player clicks on it.
+  CANNOT_BE_PURCHASED: |-
+    &c(!) This egg cannot be purchased with experience.
+    &7You can find this egg in the warzone, crates or on the store!
+  #Message the player will receive when they try to place a pet.
+  CANNOT_PLACE: '&c(!) You are not allowed to place &7&n%item%&c.'
+  #Message the player will receive when they try to spawn a mob with the pet egg.
+  ILLEGAL_INTERACTION: '&c(!) You are not allowed to do that with &7&n%item%&c.'
+  #Message the player will receive when they have a full inventory.
+  FULL_INVENTORY: |- #This is a multiple line message. You can use this method for any message.
+    &c(!) You currently have a full inventory.
+    &7Make some space in your inventory and try again.
+  #Message the player will receive when they open an exclusive pet egg.
+  RECEIVE_RANDOM_PET: '&a(!) You have received a &7&n%mysterypet%&r &apet.'
+  #Message the player will receive when they do not have permission to execute a command.
+  NO_PERMISSION: '&c(!) You do not have permission to execute this command.'
+  #Message the player will get when they execute the /ngive command.
+  COMMAND_FORMAT:
+  - "&4PvpPets &cPlugin"
+  - "&d/pets giveegg <player> <egg> <amount>"
+  - "&d/pets givepet <player> <pet> <amount>"
+  - "&d/pets reload"
+  - ""
+  - "&aItem names: &f%pets% &7%mysteryeggs%"
+  #Message the player will receive when they try and give an offline player a pet.
+  OFFLINE_PLAYER: '&c(!) That player is currently offline.'
+  #Message the player will receive when they receive an item. You can use the %item% variable in this message only.
+  ITEM_RECEIVE: '&e(!) You have received a(n) &7&n%item%&r&e.'
+  #Message the player will receive when they give an item to a player. You can use the %item% and %player% variables in this message only.
+  ITEM_GIVE: '&e(!) You have successfully sent a(n) &7&n%item%&r &eto &7&n%player%&r&e.'
+  #Message the player will get when they successfully reloaded the config.
+  RELOAD_CONFIG: '&a(!) You have successfully reloaded the configuration file.'
+  #Message the player will get if they try to open stacked eggs.
+  UNSTACK_EGGS: '&c(!) Please unstack the eggs before using them.'
+  #What should the cooldown message be?
+  ON_COOLDOWN: '&c(!) This &7&n%petoncd% Pet&r &cis still on cooldown. (%cooldown%)'
+  #Message given damager when the target dodged an attacks
+  PLAYER_DODGED: '&c*** &4&n%target%&c dodged your attack ***'
+  #Message given damager when the target dodged an attacks
+  DODGED_ATTACK: '&c*** &4&n%target%&c dodged your attack ***'
+  #Message sent when player's pet levels up
+  PET_LEVEL_UP: '&a(!) Your &7&n%pet%&a has leveled up!'

@@ -1,0 +1,10 @@
+name: PvpPets
+main: com.furnesse.com.pvppets.PvpPets
+author: 6u5t4v
+version: 1.0
+api-version: 1.15
+softdepend: [HeadDatabase]
+depend: [Vault]
+commands:
+  petshop:
+  pets:
