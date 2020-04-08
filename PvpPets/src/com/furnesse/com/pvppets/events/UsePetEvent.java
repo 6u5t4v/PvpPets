@@ -7,6 +7,7 @@ import org.bukkit.event.HandlerList;
 import org.bukkit.inventory.ItemStack;
 
 import com.furnesse.com.pvppets.PvpPets;
+import com.furnesse.com.pvppets.abilities.AbilityType;
 import com.furnesse.com.pvppets.managers.Pet;
 
 public class UsePetEvent extends Event implements Cancellable {
@@ -18,11 +19,13 @@ public class UsePetEvent extends Event implements Cancellable {
 	private Player player;
 	private Pet pet;
 	private ItemStack petItem;
+	private AbilityType ability;
 
-	public UsePetEvent(Player player, Pet pet, ItemStack petItem) {
+	public UsePetEvent(Player player, Pet pet, ItemStack petItem, AbilityType ability) {
 		this.player = player;
 		this.pet = pet;
 		this.petItem = petItem;
+		this.ability = ability;
 		
 		this.cancelled = false;
 	}
@@ -41,6 +44,10 @@ public class UsePetEvent extends Event implements Cancellable {
 
 	public ItemStack getPetItem() {
 		return petItem;
+	}
+	
+	public AbilityType getAbility() {
+		return ability;
 	}
 
 	@Override

@@ -3,6 +3,7 @@ package com.furnesse.com.pvppets.abilities;
 public abstract class Ability {
 
 	public abstract void activateAbility();
+
 	
 	private boolean activeInInv;
 	private boolean useCooldown;
@@ -11,7 +12,7 @@ public abstract class Ability {
 		this.useCooldown = useCooldown;
 		this.activeInInv = activeInInv;
 	}
-
+	
 	public boolean isActiveInInv() {
 		return activeInInv;
 	}

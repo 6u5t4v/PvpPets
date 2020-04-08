@@ -1,5 +1,6 @@
 package com.furnesse.com.pvppets.abilities;
 
+import java.util.List;
 import java.util.Random;
 
 import org.bukkit.Bukkit;
@@ -57,7 +58,7 @@ public class CombatDamagePets implements Listener {
 	}
 
 	private void dodge(Player p, Player damager, ItemStack item, Pet pet, EntityDamageByEntityEvent e) {
-		UsePetEvent event = new UsePetEvent(p, pet, item);
+		UsePetEvent event = new UsePetEvent(p, pet, item, pet.getAbility());
 		Bukkit.getServer().getPluginManager().callEvent(event);
 
 		if (!event.isCancelled()) {
@@ -73,7 +74,7 @@ public class CombatDamagePets implements Listener {
 	}
 
 	private void closeDeath(Player player, ItemStack item, Pet pet, Double heal) {
-		UsePetEvent event = new UsePetEvent(player, pet, item);
+		UsePetEvent event = new UsePetEvent(player, pet, item, pet.getAbility());
 		Bukkit.getServer().getPluginManager().callEvent(event);
 
 		if (!event.isCancelled()) {
@@ -120,12 +121,13 @@ public class CombatDamagePets implements Listener {
 							&& player.getHealth() <= 6.0D) {
 						closeDeath(player, petItem, pet, 6.0D);
 					}
-
 				}
 
 				if (plugin.getPetMan().getAbility(petItem) == AbilityType.CLOSEDEATH2) {
-					for (Entity yoink : player.getNearbyEntities(5.0D, 5.0D, 5.0D)) {
-						if (yoink instanceof Player) {
+					List<Entity> nearbyEntities = player.getNearbyEntities(5.0D, 5.0D, 5.0D);
+					if (nearbyEntities.size() > 0) {
+						for (Entity yoink : nearbyEntities) {
+
 							Pet pet = plugin.getPetMan().getPet(petItem);
 
 							if (this.rand.nextInt(100) <= 15) {
@@ -133,7 +135,7 @@ public class CombatDamagePets implements Listener {
 							}
 							if (Leveling.getLevel(petItem) <= 15 && this.rand.nextInt(100) <= 5
 									&& player.getHealth() <= 6.0D) {
-								UsePetEvent event = new UsePetEvent(player, pet, petItem);
+								UsePetEvent event = new UsePetEvent(player, pet, petItem, pet.getAbility());
 								Bukkit.getServer().getPluginManager().callEvent(event);
 
 								if (!event.isCancelled()) {
@@ -151,13 +153,12 @@ public class CombatDamagePets implements Listener {
 
 							if (Leveling.getLevel(petItem) >= 16 && Leveling.getLevel(petItem) <= 29
 									&& this.rand.nextInt(100) <= 10 && player.getHealth() <= 6.0D) {
-								UsePetEvent event = new UsePetEvent(player, pet, petItem);
+								UsePetEvent event = new UsePetEvent(player, pet, petItem, pet.getAbility());
 								Bukkit.getServer().getPluginManager().callEvent(event);
 
 								if (!event.isCancelled()) {
 									player.setHealth(player.getHealth() + 5.0D);
-									((Player) yoink)
-											.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 150, 2));
+									((Player) yoink).addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 150, 2));
 									((Player) yoink).addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 150, 2));
 									((Player) yoink).playEffect(damager.getEyeLocation(), Effect.SMOKE, 200);
 									player.sendMessage(Lang.chat(
@@ -169,13 +170,12 @@ public class CombatDamagePets implements Listener {
 
 							if (Leveling.getLevel(petItem) >= 30 && this.rand.nextInt(100) <= 15
 									&& player.getHealth() <= 6.0D) {
-								UsePetEvent event = new UsePetEvent(player, pet, petItem);
+								UsePetEvent event = new UsePetEvent(player, pet, petItem, pet.getAbility());
 								Bukkit.getServer().getPluginManager().callEvent(event);
 
 								if (!event.isCancelled()) {
 									player.setHealth(player.getHealth() + 5.0D);
-									((Player) yoink)
-											.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 200, 2));
+									((Player) yoink).addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 200, 2));
 									((Player) yoink).addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 200, 2));
 									((Player) yoink).playEffect(damager.getEyeLocation(), Effect.SMOKE, 200);
 									player.sendMessage(Lang.chat(
@@ -192,7 +192,7 @@ public class CombatDamagePets implements Listener {
 				if (plugin.getPetMan().getAbility(petItem) == AbilityType.STEALFOOD) {
 					Pet pet = plugin.getPetMan().getPet(petItem);
 					if (Leveling.getLevel(petItem) <= 15 && this.rand.nextInt(100) <= 1) {
-						UsePetEvent event = new UsePetEvent(player, pet, petItem);
+						UsePetEvent event = new UsePetEvent(player, pet, petItem, pet.getAbility());
 						Bukkit.getServer().getPluginManager().callEvent(event);
 
 						if (!event.isCancelled()) {
@@ -210,7 +210,7 @@ public class CombatDamagePets implements Listener {
 
 					if (Leveling.getLevel(petItem) >= 16 && Leveling.getLevel(petItem) <= 29
 							&& this.rand.nextInt(1000) <= 25) {
-						UsePetEvent event = new UsePetEvent(player, pet, petItem);
+						UsePetEvent event = new UsePetEvent(player, pet, petItem, pet.getAbility());
 						Bukkit.getServer().getPluginManager().callEvent(event);
 
 						if (!event.isCancelled()) {
@@ -226,7 +226,7 @@ public class CombatDamagePets implements Listener {
 						}
 					}
 					if (Leveling.getLevel(petItem) >= 30 && this.rand.nextInt(100) <= 3) {
-						UsePetEvent event = new UsePetEvent(player, pet, petItem);
+						UsePetEvent event = new UsePetEvent(player, pet, petItem, pet.getAbility());
 						Bukkit.getServer().getPluginManager().callEvent(event);
 
 						if (!event.isCancelled()) {

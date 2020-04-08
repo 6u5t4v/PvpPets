@@ -48,7 +48,7 @@ public class IronSkinAbility implements Listener {
 					return;
 				}
 
-				UsePetEvent event = new UsePetEvent(p, pet, petItem);
+				UsePetEvent event = new UsePetEvent(p, pet, petItem, pet.getAbility());
 				Bukkit.getServer().getPluginManager().callEvent(event);
 
 				if (!event.isCancelled()) {
